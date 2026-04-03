@@ -2,7 +2,7 @@
 
 void double_elements(int *arr, int size) {
     for(int i=0; i<size; i++) {
-        *(arr + 1) *= 2;
+        *(arr + 1) = *(arr + 1) * 2;
     }
 
 }
