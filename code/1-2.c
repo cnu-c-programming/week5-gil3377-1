@@ -15,7 +15,7 @@ int sum_range(int *start, int *end) {
 int main() {
     int data[] = {10, 20, 30, 40, 50, 60, 70};
 
-    int result = sum_range(&data[1], &data[4]);  // 20 + 30 + 40
+    int result = sum_range(&data[1], &data[4]); 
 
     printf("%d\n", result);
 
