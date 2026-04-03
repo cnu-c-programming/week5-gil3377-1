@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 void double_elements(int *arr, int size) {
-    for(int i=0; i<size; i++) {
-        *(arr + 1) = *(arr + 1) * 2;
-    }
+    int *p = arr;  // 배열 시작 주소
 
+    for (int i = 0; i < size; i++) {
+        *p = (*p) * 2;  
+        p++;           
+    }
 }
 
 int main() {
@@ -14,8 +16,9 @@ int main() {
 
     double_elements(arr, 5);
 
-    for(int i=0; i<5; i++) {
+    for (int i = 0; i < 5; i++) {
         printf("%d\n", arr[i]);
     }
+
     return 0;
 }
