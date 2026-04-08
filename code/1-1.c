@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void double_elements(int *arr, int size) {
-    int *p = arr;  // 배열 시작 주소
+    int *p = arr; 
 
     for (int i = 0; i < size; i++) {
         *p = (*p) * 2;  
